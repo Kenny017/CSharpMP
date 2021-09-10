@@ -1,4 +1,6 @@
 hello
 changed by Philip
 
-class test
+Added by Don (DonBranch)
+
+class Object
