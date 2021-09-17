@@ -2,4 +2,7 @@
 .vs
 Teams/DonAlvaro/String/bin
 Teams/DonAlvaro/String/obj
-Teams/DonAlvaro/String/String.csproj
+Teams/DonAlvaro/Collections/bin
+Teams/DonAlvaro/Collections/obj
+Teams/DonAlvaro/Collections/Template.cs
+Teams/DonAlvaro/String/Template.cs
