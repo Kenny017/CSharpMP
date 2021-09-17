@@ -1,2 +1,5 @@
 #put ignore files and folders here
 .vs
+Teams/DonAlvaro/String/bin
+Teams/DonAlvaro/String/obj
+Teams/DonAlvaro/String/String.csproj
