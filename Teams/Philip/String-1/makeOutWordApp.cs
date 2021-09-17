@@ -1,11 +1,15 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
-namespace codingBat
+
+namespace testingApp
 {
-    class Program
+    class makeOutWordApp
     {
-        public static void Main(String[] args)
+        //return (out.substring(0, 2) + word + out.substring(2, 4));
+        public void makeOutWord()
         {
+            
             StringBuilder input = new StringBuilder();
             char userInput = 'y';
 
@@ -24,5 +28,6 @@ namespace codingBat
 
             } while (userInput == 'y');
         }
+
     }
 }

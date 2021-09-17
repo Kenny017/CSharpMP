@@ -1,10 +1,12 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
-namespace codingBat
+
+namespace testingApp
 {
-    class Program
+    class makeTagsApp
     {
-        public static void Main(String[] args)
+        public void tags()
         {
             StringBuilder input = new StringBuilder();
             char userInput = 'y';

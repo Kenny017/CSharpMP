@@ -1,22 +1,26 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
-namespace codingBat
+
+namespace testingApp
 {
-    class Program
+    class extraEndApp
     {
-        public static void Main(String[] args)
+        public void extraEnd()
         {
+
             StringBuilder input = new StringBuilder();
             char userInput = 'y';
 
             do
             {
                 input.Clear();
-                string s;
+                string word;
+                string end;
                 Console.Write("Enter Word: ");
-                s = Console.ReadLine();
-                string result = s.Substring(1, s.Length - 2);
-                Console.Write("Output: "+result);
+                word = Console.ReadLine();
+                end = word.Substring(word.Length - 2);
+                Console.Write("Output: "+ end + end +end);
 
                 Console.Write("\nTry Again? (y/n): ");
                 userInput = Console.ReadLine()[0];

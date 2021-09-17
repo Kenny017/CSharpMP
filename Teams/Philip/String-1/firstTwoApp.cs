@@ -1,11 +1,14 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
-namespace codingBat
+
+namespace testingApp
 {
-    class Program
+    class firstTwoApp
     {
-        public static void Main(String[] args)
+        public void firstTwo()
         {
+
             StringBuilder input = new StringBuilder();
             char userInput = 'y';
 
@@ -18,7 +21,7 @@ namespace codingBat
 
                 if (str.Length >= 2)
                 {
-                    Console.WriteLine(str.Substring(0,2));
+                    Console.WriteLine("Output: " + str.Substring(0,2));
                 }
                 /* Solution notes: need an if/else structure to call substring if the length
                    is 2 or more, and otherwise returnn the string itself*/
