@@ -1,8 +1,13 @@
 #put ignore files and folders here
 .vs
-Teams/DonAlvaro/String/bin
-Teams/DonAlvaro/String/obj
+Teams/DonAlvaro/StringProblems/bin
+Teams/DonAlvaro/StringProblems/obj
 Teams/DonAlvaro/Collections/bin
 Teams/DonAlvaro/Collections/obj
 Teams/DonAlvaro/Collections/Template.cs
-Teams/DonAlvaro/String/Template.cs
+Teams/DonAlvaro/StringProblems/Template.cs
+Teams/DonAlvaro/Arrays/bin
+Teams/DonAlvaro/Arrays/obj
+Teams/DonAlvaro/Arrays/Template.cs
+Teams/DonAlvaro/Class/bin
+Teams/DonAlvaro/Class/obj
