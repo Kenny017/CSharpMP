@@ -1,0 +1,14 @@
+C:\Users\sgvip\source\repos\Array-1\Array-1\bin\Debug\netcoreapp3.1\Array-1.exe
+C:\Users\sgvip\source\repos\Array-1\Array-1\bin\Debug\netcoreapp3.1\Array-1.deps.json
+C:\Users\sgvip\source\repos\Array-1\Array-1\bin\Debug\netcoreapp3.1\Array-1.runtimeconfig.json
+C:\Users\sgvip\source\repos\Array-1\Array-1\bin\Debug\netcoreapp3.1\Array-1.runtimeconfig.dev.json
+C:\Users\sgvip\source\repos\Array-1\Array-1\bin\Debug\netcoreapp3.1\Array-1.dll
+C:\Users\sgvip\source\repos\Array-1\Array-1\bin\Debug\netcoreapp3.1\Array-1.pdb
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.csproj.AssemblyReference.cache
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.AssemblyInfoInputs.cache
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.AssemblyInfo.cs
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.csproj.CoreCompileInputs.cache
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.dll
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.pdb
+C:\Users\sgvip\source\repos\Array-1\Array-1\obj\Debug\netcoreapp3.1\Array-1.genruntimeconfig.cache
