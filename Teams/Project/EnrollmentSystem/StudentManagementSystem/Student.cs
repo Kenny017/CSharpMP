@@ -4,6 +4,13 @@ namespace StudentManagementSystem
 {
     class Student : IStudent
     {
+        public static int Count { private set; get; } //Class Variable Count. Accessible to all Student objects.
+
+        public Student()
+        {
+            Count++;                 //Incremented for each new Student Created
+        }
+
         string ClassName;
         public string Class
         {
