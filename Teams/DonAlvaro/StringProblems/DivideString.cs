@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Text;
 
-namespace DivideString
+namespace Program
 {
-    class Program
+    class DivideString   //Divides an Even Length String into Half.
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             string outputString;
             StringBuilder input = new StringBuilder();
@@ -33,7 +33,7 @@ namespace DivideString
                 userInput = Console.ReadLine()[0];
 
             } while (userInput == 'y');
-
+		//TEST FOR BRANCH
         }
     }
 }

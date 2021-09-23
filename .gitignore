@@ -1,7 +1,20 @@
 #put ignore files and folders here
+.vs
+Teams/DonAlvaro/StringProblems/bin
+Teams/DonAlvaro/StringProblems/obj
+Teams/DonAlvaro/Collections/bin
+Teams/DonAlvaro/Collections/obj
+Teams/DonAlvaro/Collections/Template.cs
+Teams/DonAlvaro/StringProblems/Template.cs
+Teams/DonAlvaro/Arrays/bin
+Teams/DonAlvaro/Arrays/obj
+Teams/DonAlvaro/Arrays/Template.cs
+Teams/DonAlvaro/Class/bin
+Teams/DonAlvaro/Class/obj
 Teams/Philip/String-1/bin/
 Teams/Philip/String-1/obj/
 Teams/Philip/Array-1/bin/
 Teams/Philip/Array-1/obj/
-Teams/Philip/EnrollmentSystem/StudentManagementSystem/bin/
-Teams/Philip/EnrollmentSystem/StudentManagementSystem/obj/
+Teams/Project/EnrollmentSystem/StudentManagementSystem/bin/
+Teams/Project/EnrollmentSystem/StudentManagementSystem/obj/
+

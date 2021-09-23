@@ -10,6 +10,7 @@ namespace StudentManagementSystem
         {
             while (true)
             {
+                
                 Console.WriteLine("+----------------------------+");
                 Console.WriteLine("| STUDENTS MANAGEMENT SYSTEM |");
                 Console.WriteLine("+----------------------------+");
@@ -20,23 +21,31 @@ namespace StudentManagementSystem
                 Console.WriteLine("+----------------------------+");
                 
                 Console.Write("Your choice: ");
-                int choice = int.Parse(Console.ReadLine());
-                switch (choice)
+                try
                 {
-                    // if user choose 1 it will call the IStudent class
-                    case 1:
-                        InsertStudent();
-                        break;
-                    
-                    case 2:
-                        ViewList();
-                        break;
-                    case 3:
-                        Search();
-                        break;
-                    case 4:
-                        return;
+                    int choice = int.Parse(Console.ReadLine());
+                    switch (choice)
+                    {
+                        // if user choose 1 it will call the IStudent class
+                        case 1:
+                            InsertStudent();
+                            break;
+                        case 2:
+                            ViewList();
+                            break;
+                        case 3:
+                            Search();
+                            break;
+                        case 4:
+                            System.Environment.Exit(0);
+                            break;
+                    }
                 }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Wrong Input.Try again.\n"); 
+                }
+                    
             }
         }
 
@@ -69,14 +78,15 @@ namespace StudentManagementSystem
                 Console.WriteLine("----------------------------");
                 i.Display();
             }
+            Console.WriteLine($"No. of Students: {Student.Count}");
         }
 
         private static void InsertStudent()
         {
-            Student student = new Student();
-
+            Student student = new Student();        //DAL, if possible, validating all inputs before
+                                                    //the creation of the object.
             //Increament ID
-            student.ID = listDictionary.Count + 1;
+            student.ID = Student.Count;
 
             //Input name
             Console.Write("Enter Fullname: ");
@@ -85,14 +95,14 @@ namespace StudentManagementSystem
             //Input date
             while (true)
             {
-                Console.Write("Enter Date of Birth: Ex. (01/01/2021) : ");
+                Console.Write("Enter Date of Birth: Ex. (01/01/2021) : "); 
                 //DateTime dDate;
                 try
                 {
                     student.DateofBirth = DateTime.Parse(Console.ReadLine());
                     break;
                 }
-                catch (Exception ex)
+                catch (FormatException ex)
                 {
                     Console.WriteLine("The date is not in the correct format!");
                     Console.WriteLine(ex.Message);
