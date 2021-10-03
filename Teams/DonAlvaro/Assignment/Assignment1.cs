@@ -24,12 +24,13 @@ namespace Assignment
             while (true)
             {
 
-                Console.WriteLine("\nPOINT-OF-SALE");
+                Console.WriteLine("\n+++++++++++++++++++POINT-OF-SALE+++++++++++++++++++");
                 Console.WriteLine("\n(1) ADD A PRODUCT");
                 Console.WriteLine("(2) DISPLAY ALL PRODUCTS");
                 Console.WriteLine("(3) DISPLAY TRANSACTION RECORDS OF EACH PRODUCT");
                 Console.WriteLine("(4) ADD STOCK");
-                Console.WriteLine("(5) BUY A PRODUCT");
+                Console.WriteLine("(5) STOCK HISTORY");
+                Console.WriteLine("(6) BUY A PRODUCT");
 
                 Console.Write("Select: ");
 
@@ -53,6 +54,9 @@ namespace Assignment
                             AddStock();
                             break;
                         case 5:
+                            ProductStockHistory();
+                            break;
+                        case 6:
                             BuyProduct();
                             break;
                     }
@@ -61,14 +65,30 @@ namespace Assignment
                 catch (Exception)
                 {
 
-                    throw;
+                    Console.WriteLine("Error!"); ;
                 }
 
             }
 
 
         }
+        public static void ProductStockHistory()
+        {
+            Console.WriteLine("STOCK HISTORY\n");
+            foreach (var item in ListOfProducts)
+            {
+                
 
+                item.DisplayProductStockHistory();
+            }
+
+
+
+
+
+
+
+        }
         public static void BuyProduct()
         {
             Console.Write("What Product do you like to buy: ");
@@ -118,7 +138,7 @@ namespace Assignment
         public static void DisplayAllProducts()
         {
             Console.WriteLine("\nALL PRODUCTS\n");
-            Console.WriteLine("Product Name\tProduct Price\tStock Quantity\t");
+            Console.WriteLine("Product Name\tProduct Price\tCurrent Stock Quantity\t");
             foreach (var item in ListOfProducts)
             {
                 item.DisplayProductNamePricesStock();
@@ -129,7 +149,7 @@ namespace Assignment
         public static void DisplayAllTransactions()
         {
             Console.WriteLine("\nTRANSACTION RECORDS");
-            Console.WriteLine($"Transaction Record\tTime Stamp\t\tQuantity Transacted\tPrice");
+            //Console.WriteLine($"Transaction Record\tTime Stamp\t\tQuantity Transacted\tPrice");
             foreach (var item in ListOfProducts)
             {
                 item.DisplayTransactionRecord();
@@ -205,8 +225,9 @@ namespace Assignment
 
             } else
             {
-                Console.WriteLine($"\nProduct Name: {Name}\n");
 
+                Console.WriteLine($"\nProduct Name: {Name}\n");
+                Console.WriteLine($"Transaction Record\tTime Stamp\t\tQuantity Transacted\tPrice");
                 foreach (var item in ProductTransactionHistory)
                 {
                     //Console.WriteLine($"Transaction Record\tTime Stamp\t\tQuantity Transacted\tPrice");
@@ -220,7 +241,7 @@ namespace Assignment
 
         public void DisplayProductNamePricesStock ()
         {
-
+            
             Console.WriteLine($"{Name}\t{Prices}\t\t{AvailableStock()}");
 
         }
@@ -261,6 +282,18 @@ namespace Assignment
             //}
 
             return CurrentStock;
+
+
+        }
+
+        public void DisplayProductStockHistory()
+        {
+            Console.WriteLine($"\nProduct Name: {Name}");
+            Console.WriteLine($"STOCK QUANTITY\tDATE ADDED");
+            foreach (var item in StockQuantityHistory)
+            {
+                Console.WriteLine($"{item.Quantity}\t\t{item.dateAdded}");
+            }
 
 
         }
